@@ -1,0 +1,41 @@
+
+
+body {
+	background-color: #FFFFFF;
+}
+
+p {
+	font-size: 100px;
+}
+
+.container {
+	width: 80%;
+	height: 80vw;
+	margin-left: 10%;
+	background-color: gold;
+}
+
+.boxes {
+	width: calc(92% / 3);
+	height: 600px;
+	margin: 1vw;
+	background-color: #000000;
+	float: left;
+}
+
+#box1{
+	background-color: red;
+}
+
+#box2{
+	background-color: green;
+}
+
+#box3{
+	background-color: blue;
+}
+
+.msg {
+	color: #FFFFFF;
+	font-size: 30px;
+}
