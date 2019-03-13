@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<title>Colour Accessibility</title>
+	<link href="style/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Muli:300, 900" rel="stylesheet">
+</head>
+
+<body>
+	<div class="main-content">
+
+		<div class="all-colours page">
+
+			<div class="intro">
+				<h1 class="padding-bottom-05em">An accessibility assessment of coloured text on coloured backgrounds.</h1>
+				<h2>Is your web content visible to those with colour blindness and low vision? Find out the contrast rating out of 10 for various text/background colour combinations, and see whether they pass or fail the <button id="button-wcag" class="wcag-button">WCAG</button> guidelines.</h2>
+			</div>
+
+			<ul class="colours-list">
+				<!-- Handlebars templating script goes here-->
+				<script id="colours-template" type="x-handlebars-template">
+					
+				{{#each this}}
+            		<li data-index="{{id}}" class="colour-box" style="background-color:{{bcolor}};color:{{fcolor}};padding:10px;box-shadow: 10px 10px {{fcolor}};">
+		            	<h3 class="padding-bottom-05em">{{name}}</h3>
+		            	<h6 class="border-bottom">Contrast rating</h6>
+		            	<h3 class="padding-bottom-05em padding-left-05em">{{ratio}}</h3>
+		            	<div class="padding-bottom-05em"><h6 class="border-bottom">Large text</h6></div>
+		            	<div class="container padding-bottom-05em">
+		            	<div class="half padding-bottom-05em padding-top-05em"><p class="padding-bottom-05em">WCAG AA: </p><h4>{{AALarge}}</h4></div
+		              	><div class="half padding-bottom-05em"><p class="padding-bottom-05em">WCAG AAA: </p><h4>{{AAALarge}}</h4></div>
+		        		</div>
+		            	<div class="padding-bottom-05em"><h6 class="border-bottom">Normal text</h6></div>
+		            	<div class="half padding-bottom-05em padding-top-05em"><p class="padding-bottom-05em">WCAG AA: </p><h5>{{AA}}</h5></div
+		            	><div class="half padding-bottom-05em"><p class="padding-bottom-05em">WCAG AAA: </p><h5>{{AAA}}</h5></div>
+		            </li>
+		        {{/each}}
+
+				</script>
+				<!-- The above {{id}} is saying, use the id as an index for the array.-->
+			</ul>
+		</div>
+
+		<div class="WCAG page">
+			<div class="popup">
+				<h3 class="padding-bottom-05em">What is WCAG?</h3>
+				<h6><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="blank">Web Content Accessibility Guidelines (WCAG) 2.1</a> covers a wide range of recommendations for making web content more accessible to a broad range of people, including those with disabilities such as colour blindness and low vision.</h6>
+				<br>
+				<h6><span class="bold">Large text</span> refers to regular text which is 18pt and larger, as well as bold text which is 14pt and larger. <span class="bold">Normal text</span> refers to regular text which is below 18pt, as well as bold text which is below 14pt.</h6>
+				<br>
+				<h6 class="padding-bottom-05em">An <span class="bold">AA pass</span> means that the colour combination has an acceptable amount of contrast (ie. above a 4.5 rating). An <span class="bold">AAA pass</span> means that the colour combination has an enhanced level of contrast (ie. above a 7.0 rating). Longer form articles that will be read for a significant period of time should have an AAA pass.</h6>
+				<div class="close">×</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>

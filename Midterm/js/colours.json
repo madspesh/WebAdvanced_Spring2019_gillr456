@@ -1,0 +1,180 @@
+[
+  {
+    "id": 1,
+    "name": "Cyan and Blue",
+    "fcolor": "#00FDFF",
+    "bcolor": "#0433FF",
+    "ratio": "5.64",
+    "AA": "pass",
+    "AALarge": "pass",
+    "AAA": "fail",
+    "AAALarge": "pass"
+  },
+  {
+    "id": 2,
+    "name": "Orange and Purple",
+    "fcolor": "#FF9300",
+    "bcolor": "#942192",
+    "ratio": "3.26",
+    "AA": "fail",
+    "AALarge": "pass",
+    "AAA": "fail",
+    "AAALarge": "fail"
+  },
+  {
+    "id": 3,
+    "name": "Yellow and Red",
+    "fcolor": "#FF2600",
+    "bcolor": "#FFFB00",
+    "ratio": "3.45",
+    "AA": "fail",
+    "AALarge": "pass",
+    "AAA": "fail",
+    "AAALarge": "fail"
+  },
+  {
+    "id": 4,
+    "name": "Teal and Maroon",
+    "fcolor": "#3ADBD6",
+    "bcolor": "#6F000B",
+    "ratio": "7.31",
+    "AA": "pass",
+    "AALarge": "pass",
+    "AAA": "pass",
+    "AAALarge": "pass"
+  },
+  {
+    "id": 5,
+    "name": "Pink and Lime",
+    "fcolor": "#ED008B",
+    "bcolor": "#A2FF33",
+    "ratio": "3.40",
+    "AA": "fail",
+    "AALarge": "pass",
+    "AAA": "fail",
+    "AAALarge": "fail"
+  },
+  {
+    "id": 6,
+    "name": "Navy and Lilac",
+    "fcolor": "#00256E",
+    "bcolor": "#C883FF",
+    "ratio": "5.47",
+    "AA": "pass",
+    "AALarge": "pass",
+    "AAA": "fail",
+    "AAALarge": "pass"
+  },
+  {
+    "id": 7,
+    "name": "Purple and Baby Blue",
+    "fcolor": "#A900FF",
+    "bcolor": "#C3FEFF",
+    "ratio": "4.59",
+    "AA": "pass",
+    "AALarge": "pass",
+    "AAA": "fail",
+    "AAALarge": "pass"
+  },
+  {
+    "id": 8,
+    "name": "Brown and Sunflower",
+    "fcolor": "#F5E356",
+    "bcolor": "#7D4427",
+    "ratio": "5.87",
+    "AA": "pass",
+    "AALarge": "pass",
+    "AAA": "fail",
+    "AAALarge": "pass"
+  },
+  {
+    "id": 9,
+    "name": "Raspberry and Cornflower",
+    "fcolor": "#9A275A",
+    "bcolor": "#AFCEF3",
+    "ratio": "4.60",
+    "AA": "pass",
+    "AALarge": "pass",
+    "AAA": "fail",
+    "AAALarge": "pass"
+  },
+  {
+    "id": 10,
+    "name": "Puce and Brown",
+    "fcolor": "#572507",
+    "bcolor": "#CD8987",
+    "ratio": "4.50",
+    "AA": "fail",
+    "AALarge": "pass",
+    "AAA": "fail",
+    "AAALarge": "fail"
+  },
+  {
+    "id": 11,
+    "name": "Navy and Pale Grey",
+    "fcolor": "#001680",
+    "bcolor": "#BFBFBF",
+    "ratio": "8.01",
+    "AA": "pass",
+    "AALarge": "pass",
+    "AAA": "pass",
+    "AAALarge": "pass"
+  },
+  {
+    "id": 12,
+    "name": "Charcoal and Baby Pink",
+    "fcolor": "#E585C5",
+    "bcolor": "#364958",
+    "ratio": "3.77",
+    "AA": "fail",
+    "AALarge": "pass",
+    "AAA": "fail",
+    "AAALarge": "fail"
+  },
+  {
+    "id": 13,
+    "name": "Khaki and Cornflower",
+    "fcolor": "#FFDB32",
+    "bcolor": "#546400",
+    "ratio": "4.82",
+    "AA": "pass",
+    "AALarge": "pass",
+    "AAA": "fail",
+    "AAALarge": "pass"
+  },
+  {
+    "id": 14,
+    "name": "Coral and Purple",
+    "fcolor": "#5B0093",
+    "bcolor": "#FF633B",
+    "ratio": "3.80",
+    "AA": "fail",
+    "AALarge": "pass",
+    "AAA": "fail",
+    "AAALarge": "fail"
+  },
+  {
+    "id": 15,
+    "name": "Peach and Magenta",
+    "fcolor": "#FFDBB2",
+    "bcolor": "#F032E6",
+    "ratio": "2.54",
+    "AA": "fail",
+    "AALarge": "fail",
+    "AAA": "fail",
+    "AAALarge": "fail"
+  },
+  {
+    "id": 16,
+    "name": "Lime and Burnt Orange",
+    "fcolor": "#00FF0E",
+    "bcolor": "#AF1C00",
+    "ratio": "5.12",
+    "AA": "pass",
+    "AALarge": "pass",
+    "AAA": "fail",
+    "AAALarge": "pass"
+  }
+]
+
+
