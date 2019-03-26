@@ -1,6 +1,6 @@
 # Colour Accessibility
 
-![Image of Desktop and Mobile views](https://raw.githubusercontent.com/madspesh/WebAdvanced_Spring2019_gillr456/master/Midterm/style/img/image1.jpg)
+![Image of desktop and mobile views](https://raw.githubusercontent.com/madspesh/WebAdvanced_Spring2019_gillr456/master/Midterm/style/img/image1.jpg)
 
 For my Javascript midterm project, I created an interactive webpage about colour contrast in web accessibility. The main requirements were to create a single page application pulling information from a JSON file, using the jQuery library. We were also required to have a strong initial concept to drive our thinking. 
 
@@ -16,17 +16,23 @@ I had initially planned to use the [WebAIM Color Contrast Checker API](https://w
 
 ### JSON
 
+![JSON code screenshot](https://raw.githubusercontent.com/madspesh/WebAdvanced_Spring2019_gillr456/master/Midterm/style/img/json1.jpg)
+
 I populated my JSON file with 16 pairs of colours with a variety of pass/fail results, in order to demonstrate how certain combinations you may assume to be highly contrasting could in fact be completely illegible to those with colour blindness and low vision.
 
 I assigned my own unique names to the pairings (eg. Khaki and Cornflower), and gave each of them an id which I would refer to in my Handlebars templating script. The rest of the colour contrast information is taken directly from the WebAIM website.
 
 ### HTML + CSS
 
+![HTML code screenshot](https://raw.githubusercontent.com/madspesh/WebAdvanced_Spring2019_gillr456/master/Midterm/style/img/html1.jpg)
+
 My HTML file contains the Handlebars script which allowed me apply a templated style to each object in my JSON file. The objects are rendered in square boxes with a 3D drop-shadow effect. The background and text/drop-shadow colours of each square is pulled directly from the pairing's *bcolor* and *fcolor* HEX codes.
 
 I used CSS to style the squares and ensure that the application was responsive and highly visible on all desktop, tablet and mobile devices. I used Merriweather and Muli as my main typefaces, pulling from the Google Fonts stylesheet.
 
 ### jQuery
+
+![jQuery code screenshot](https://raw.githubusercontent.com/madspesh/WebAdvanced_Spring2019_gillr456/master/Midterm/style/img/js1.jpg)
 
 In my JavaScript file, you can find all the functions that I used to pull and render the data from my JSON file. The functions are all written in jQuery syntax, in order to make it easier to mainpulate my HTML file. I call all of the functions in my init variable at the bottom of the file.
 
