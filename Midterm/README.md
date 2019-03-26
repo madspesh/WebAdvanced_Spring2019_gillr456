@@ -1,6 +1,6 @@
 # Colour Accessibility
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Desktop and Mobile views](https://raw.githubusercontent.com/madspesh/WebAdvanced_Spring2019_gillr456/master/Midterm/style/img/image1.jpg)
 
 For my Javascript midterm project, I created an interactive webpage about colour contrast in web accessibility. The main requirements were to create a single page application pulling information from a JSON file, using the jQuery library. We were also required to have a strong initial concept to drive our thinking. 
 
