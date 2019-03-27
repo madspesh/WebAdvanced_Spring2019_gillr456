@@ -2,6 +2,8 @@
 
 ![Image of desktop and mobile views](https://raw.githubusercontent.com/madspesh/WebAdvanced_Spring2019_gillr456/master/Midterm/style/img/image1.jpg)
 
+[Link to screen recording video](https://vimeo.com/326726105)
+
 For my Javascript midterm project, I created an interactive webpage about colour contrast in web accessibility. The main requirements were to create a single page application pulling information from a JSON file, using the jQuery library. We were also required to have a strong initial concept to drive our thinking. 
 
 ## Concept
@@ -34,7 +36,7 @@ I used CSS to style the squares and ensure that the application was responsive a
 
 ![jQuery code screenshot](https://raw.githubusercontent.com/madspesh/WebAdvanced_Spring2019_gillr456/master/Midterm/style/img/js1.jpg)
 
-In my JavaScript file, you can find all the functions that I used to pull and render the data from my JSON file. The functions are all written in jQuery syntax, in order to make it easier to mainpulate my HTML file. I call all of the functions in my init variable at the bottom of the file.
+In my JavaScript file, you can find all the functions that I used to pull and render the data from my JSON file. The functions are all written in jQuery syntax, in order to make it easier to manipulate my HTML file. I call all of the functions in my init variable at the bottom of the file.
 
 In addition to simply displaying the colour pairings, I added a popup box which is activated by clicking the WCAG button in the introduction text. The popup contains information about the WCAG and the meaning behind labels such as "Large Text" and "AAA pass".
 
