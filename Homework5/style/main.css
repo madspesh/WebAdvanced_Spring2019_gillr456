@@ -1,0 +1,118 @@
+/* Your styles begin here */
+
+* {
+	background-color: blue;
+	font-family: 'Palanquin Dark', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightblue;
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+}
+
+.block-question {
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+}
+
+.question {
+	background-color: #77d58b;
+	color: #8b2d77;
+	height: 70vh;
+	font-weight: 700;
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+#large-text {
+	font-size: 4em;
+	line-height: 1em;
+	background-color: inherit;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+}
+
+.response {
+	width: 100%;
+	margin-top: 20px;
+	background-color: inherit;
+}
+
+#yes {
+	background-color: white;
+	border: none;
+	width: 50%;
+	float: left;
+	font-size: 3em;
+	text-align: center;
+}
+
+#no {
+	background-color: white;
+	border: none;
+	width: 50%;
+	float: right;
+	font-size: 3em;
+	text-align: center;
+}
+
+#correct-answer {
+	font-size: 3em;
+	line-height: 1em;
+	text-align: center;
+	background-color: inherit;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	display: none;
+}
+
+#wrong-answer {
+	font-size: 3em;
+	line-height: 1em;
+	text-align: center;
+	background-color: inherit;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	display: none;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+	.block-question {
+		width: 700px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.block-question {
+		width: 90vw;
+	}
+	#large-text {
+		font-size: 30px;
+	}
+	#correct-answer {
+		font-size: 30px;
+	}
+	#wrong-answer {
+		font-size: 30px;
+	}
+}
