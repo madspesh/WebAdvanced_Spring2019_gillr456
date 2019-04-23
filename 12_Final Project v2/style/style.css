@@ -1,0 +1,224 @@
+
+/*  Text Styling  */
+
+* {
+	font-family: 'Palanquin Dark', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightblue;
+	height: 100vh;
+	position: relative;
+}
+
+
+/*  Main  */
+
+.block-question {
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.block-question {
+		width: 700px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.block-question {
+		width: 90vw;
+	}
+	#large-text {
+		font-size: 30px;
+	}
+	#correct-answer {
+		font-size: 30px;
+	}
+	#wrong-answer {
+		font-size: 30px;
+	}
+}
+
+.words {
+	visibility: hidden;
+	list-style: none;
+	font-size: 0;
+}
+
+.words > li {
+	display: block;
+	position: absolute;
+	text-align: left;
+	font: normal 12px sans-serif;
+	background-color: beige;
+	width: 30em;
+	height: 30em;
+	padding: 5em;
+	margin: 4em;
+	vertical-align: top;
+}
+
+.question {
+	height: 70vh;
+	font-weight: 700;
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+#large-text {
+	font-size: 4em;
+	line-height: 1em;
+	background-color: inherit;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+}
+
+.answer {
+	width: 100%;
+	margin-top: 20px;
+	background-color: inherit;
+}
+
+#correct {
+	background-color: white;
+	border: none;
+	width: 50%;
+	float: left;
+	font-size: 3em;
+	text-align: center;
+}
+
+#wrong {
+	background-color: white;
+	border: none;
+	width: 50%;
+	float: right;
+	font-size: 3em;
+	text-align: center;
+}
+
+#pass-correct-answer {
+	font-size: 3em;
+	line-height: 1em;
+	text-align: center;
+	background-color: inherit;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	display: none;
+	z-index: 110;
+}
+
+#pass-wrong-answer {
+	font-size: 3em;
+	line-height: 1em;
+	text-align: center;
+	background-color: inherit;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	display: none;
+	z-index: 110;
+}
+
+#fail-correct-answer {
+	font-size: 3em;
+	line-height: 1em;
+	text-align: center;
+	background-color: inherit;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	display: none;
+	z-index: 110;
+}
+
+#fail-wrong-answer {
+	font-size: 3em;
+	line-height: 1em;
+	text-align: center;
+	background-color: inherit;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	display: none;
+	z-index: 110;
+}
+
+
+.one {
+	z-index: 100;
+	display: block;
+}
+
+.two {
+	z-index: 90;
+	display: block;
+}
+
+.three {
+	z-index: 80;
+	display: block;
+}
+
+.four {
+	z-index: 70;
+	display: block;
+}
+
+.five {
+	z-index: 60;
+	display: block;
+}
+
+.six {
+	z-index: 50;
+	display: block;
+}
+
+.seven {
+	z-index: 40;
+	display: block;
+}
+
+.eight {
+	z-index: 30;
+	display: block;
+}
+
+.nine {
+	z-index: 20;
+	display: block;
+}
+
+.ten {
+	z-index: 10;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
