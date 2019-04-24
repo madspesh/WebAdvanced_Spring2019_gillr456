@@ -14,10 +14,13 @@ My audience will be designers, developers, or anyone creating in the digital spa
 
 ## Precedents
 
+![JSON code screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/cantunsee.gif)
 [Game of the Year](https://gameoftheyear.withgoogle.com/) is a game which tests your knowledge of the most popular Google search queries.
 
+![JSON code screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/cantunsee.gif)
 [Can't Unsee](https://cantunsee.space/) is a game for creatives which tests your attention to detail in terms of user interfaces.
 
+![JSON code screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/cantunsee.gif)
 [It's Centred That](https://www.supremo.co.uk/designers-eye/) is another game for creatives which tests your 'designers eye' in terms of centering content.
 
 ## Process
