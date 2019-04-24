@@ -46,3 +46,7 @@ As of this week I have multiple questions - each with their own background and t
 
 I have done a lot of console logs and the code seems to display the correct message for questions 1 and 2, but for some reason question 3 still only displays the message from question 2. The code for question 3 definitely works as the console log shows me that it has executed, but the message is being overwritten by question 2. I think I need to find a way to execute the code one step at a time only.
 
+[Here is a link](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/tree/master/12_Final%20Project%20v2) to my code so far.
+
+
+
