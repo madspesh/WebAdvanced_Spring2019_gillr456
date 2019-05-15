@@ -48,8 +48,6 @@ My next step was to compile multiple question variables - each with their own ba
 
 I did a lot of console logs and the code seemed to display the correct message for questions 1 and 2, but question 3 only displayed the message from question 2. The code for question 3 definitely worked as the console log showed that it has executed, but the message was being overwritten by question 2. I needed to find a way to execute the code one step at a time only.
 
-![Another web inspector screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/tree/master/12_Final%20Project%20v2)
-
 
 
 ## Triumphs
@@ -85,12 +83,11 @@ In order to increase the gamified aspect of the experience, I integrated a score
 
 I also upped the game-like intensity by adding a timebar, which would start out as green at 0 seconds and then eventually switch to red as the time was approaching 5 seconds. I used the 'animate' method to increase the CSS width of the bar as time increased.
 
-![animate JS method screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/screenshot3.png)
 ![Red timebar screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/screenshot3.png)
 
 Finally, I added a customised sentiment message at the end of the quiz depending on the users final score. Users that scored 10 out of 10 would receive a 'perfect score!' message, whilst users that scored less than 1 received a 'did you even try?!' message.
 
-![JS screenshot of customised message code](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/code4_.png)
+![JS screenshot of customised message code](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/code5.png)
 ![Customised message screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/screenshot6.png)
 
 
