@@ -1,10 +1,12 @@
 # Colour Accessibility
 
-![Midterm Project](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/midtermimage.jpg)
+![Colour Accessibility Quiz screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/screenshot2.png)
 
-Following on from my midterms, for my final project I am creating a Javascript game to raise awareness about the importance of colour contrast in web accessibility. According to the [World Wide Web Consortium (W3C)](https://www.w3.org/), designers should always strive to make it easier for users to read content by providing adequate colour contrast between background and foreground.
+Following on from my midterm project, for my final Spring semester project I created a Javascript game to raise awareness about the importance of colour contrast in web accessibility. According to the [World Wide Web Consortium (W3C)](https://www.w3.org/), designers should always strive to make it easier for users to read content by providing adequate colour contrast between background and foreground.
 
-The main requirements of the finals are to create a responsive web-based application which uses jQuery and pulls information from a third party API. We are also required to have a strong concept behind our application in order to drive our thinking.
+![Midterm project screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/midtermimage.jpg)
+
+The main requirements of the final semester project were to create a responsive web-based application which uses jQuery and pulls information from a third party API. We were also required to have a strong concept behind our application in order to drive our thinking.
 
 
 
@@ -34,7 +36,7 @@ My target audience are designers, developers, or anyone creating in the digital 
 
 
 
-## Process
+## Challenges
 
 ![Web inspector screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/successfulAPI.gif)
 
@@ -47,6 +49,60 @@ My next step was to compile multiple question variables - each with their own ba
 I did a lot of console logs and the code seemed to display the correct message for questions 1 and 2, but question 3 only displayed the message from question 2. The code for question 3 definitely worked as the console log showed that it has executed, but the message was being overwritten by question 2. I needed to find a way to execute the code one step at a time only.
 
 ![Another web inspector screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/tree/master/12_Final%20Project%20v2)
+
+
+
+## Triumphs
+
+After lots of unsuccessful attempts at rewriting the code, I sat down with my instructor for advice. I realised that as Handlebars is a templating engine used to display content in multiple containers, it wasn't suitable for this project which only had one container. I edited my HTML file to include just one main container div, instead of the multiple container divs that I was removing/displaying before.
+
+![HTML code screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/code1.png)
+
+I also restructured my JSON file so that all of my questions were stored as multiple objects in one variable, rather than multiple variables. This made it easier to reference colour combinations in my JS code by simply using 'i', rather than a specific variable (eg. 'data["questions"][i].backgroundcolor; ')
+
+![JSON code screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/code2_.png)
+
+The biggest revelation I had was the discovery of the 'unbind' method. The reason why my most recent code kept getting overwritten by previous functions was because I was attaching all my click events to the same two buttons. I had to unbind the click event from the Agree and Disagree button IDs after each loadQuestion function had run, in order to start afresh each time.
+
+![JS code screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/code3_.png)
+
+
+
+## Process
+
+I designed the visual interface of my game using Figma, ensuring that the UI design was colourful, engaging, and above all, accessible! Using Figma helped me to structure my CSS code quickly and easily, as it provides you with CSS properties automatically which you can simply paste into your style sheet.
+
+![Figma screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/figma_design.png)
+
+To introduce the website I designed an introductory panel which explained what the game was about, and gave users a brief introduction to the colour accessibility topic. At the end of the game I provided links for the user to learn more about the official web accessibility guidelines.
+
+![Introductory panel screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/screenshot1.png)
+
+In order to increase the gamified aspect of the experience, I integrated a scoreboard and timer by utilising the 'setTimeout' method. This allowed me to display a Correct/Incorrect for a certain period of time, and then advance the user on to the next question.
+
+![setTimeout JS method screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/code4_.png)
+![Correct message screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/screenshot4.png)
+
+I also upped the game-like intensity by adding a timebar, which would start out as green at 0 seconds and then eventually switch to red as the time was approaching 5 seconds. I used the 'animate' method to increase the CSS width of the bar as time increased.
+
+![animate JS method screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/screenshot3.png)
+![Red timebar screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/screenshot3.png)
+
+Finally, I added a customised sentiment message at the end of the quiz depending on the users final score. Users that scored 10 out of 10 would receive a 'perfect score!' message, whilst users that scored less than 1 received a 'did you even try?!' message.
+
+![JS screenshot of customised message code](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/code4_.png)
+![Customised message screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/screenshot6.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Colour Accessibility Game</title>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta charset='utf-8'>
+	<link rel="stylesheet" href="style/normalize.min.css">
+	<link rel="stylesheet" href="style/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+	<div class="info-overlay">
+		<div id="close-button" class="close-button">+</div>
+		<div class="info-text">
+			<p style="background-color:#212525; color:#FFFFFF; font-size:1.8em; line-height:1em; font-weight:700; margin:0; padding-bottom:0.5em;">Is it accessible?</p>
+			<p style="background-color:#212525; color:#FFFFFF; font-size:0.9em; line-height:1.4em; font-weight:400; margin:0; padding-bottom:0.8em;">For those with low vision, it can be difficult to read text with a colour contrast ratio lower than 3.0. As a designer, your work could actually be illegible for many users.</p>
+			<p style="background-color:#212525; color:#FFFFFF; font-size:0.9em; line-height:1.4em; font-weight:400; margin:0; padding-bottom:1.8em;">Are you aware of which colour combinations are accessible and which are not? Take this simple quiz and test your designers eye.</p>
+			<div id="go-button" class="go-button">Let's go!</div>
+		</div>
+	</div>
+
+		<div class="final-overlay">
+		<div class="final-text">
+			<p id="custom-message"></p>
+			<p style="background-color:#FFFFFF; color:#4E5657; font-size:0.8em; line-height:1.3em; font-weight:400; margin:0; padding-bottom:0.8em;">To learn more about web accessibility, consult the World Wide Web Consortium (W3C) official guidelines or check out the WebAIM website.</p>
+			<p style="background-color:#FFFFFF; color:#4E5657; font-size:0.8em; line-height:1.3em; font-weight:400; margin:0; padding-bottom:1.8em;">This website was designed and built by Rebecca Gill Clarke using HTML, CSS, JavaScript/jQuery and the WebAIM API.</p>
+			<div id="go-button" class="replay-button">Replay</div
+			><div id="retweet-button" class="retweet-button">Retweet</div>
+		</div>
+	</div>
+
+
+	<div class="quiz-container">
+		<div class="quiz-nav">
+			<div class="nav-info">
+				<div id="info-button" class="info-button">?</div>
+			</div
+			><div class="nav-title">Is it accessible?</div
+			><div class="nav-score">
+				<div id="score-user"></div
+				><div id="score-max">/ 10</div>
+			</div>
+		</div>
+		<div class="quiz-question">Aa</div>
+		<div class="quiz-timebar">
+			<div id="timebar-loader"></div>
+		</div>
+		<div id="correct"><div class="message-text">Correct!<br><br>👍</div></div>
+		<div id="wrong"><div class="message-text">Wrong...<br><br>👎</div></div>
+		<div class="quiz-answers">
+			<div id="agree" class="answer-button">Agree</div
+			><div id="disagree" class="answer-button">Disagree</div>
+		</div>
+	</div>
+
+
+
+
+	<script type="text/javascript" src="js/jquery-min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
