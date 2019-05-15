@@ -10,6 +10,8 @@ The main requirements of the final semester project were to create a responsive 
 
 
 
+
+
 ## Concept
 
 I decided to design and build a quiz game application for fellow creatives to guess whether a particular colour combination’s contrast ratio is a pass or a fail. The pass/fail results are accessed through the [WebAIM Color Contrast Checker API](https://webaim.org/resources/contrastchecker/?fcolor=0000FF&bcolor=FFFFFF&api). There are 10 combinations in total, which will be loaded into my game from an external JSON file.
@@ -17,6 +19,8 @@ I decided to design and build a quiz game application for fellow creatives to gu
 Users receive feedback after each combination on whether their guess was successful, and at the end of the quiz they receive their final score out of 10 along with a customised message. I have also integrated a scoreboard and timer to enhance the gamified experience, and I'm planning to add social media sharing links at the end of the quiz to help spread awareness.
 
 My target audience are designers, developers, or anyone creating in the digital space. The main goal of the project is to educate users about the importance of adequate colour contrast, in the hopes that they will consider incorporating more web accessible content in their future projects.
+
+
 
 
 
@@ -36,17 +40,21 @@ My target audience are designers, developers, or anyone creating in the digital 
 
 
 
-## Challenges
 
-![Web inspector screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/successfulAPI.gif)
+
+## Challenges
 
 First, I created one test question in order to get the API connected and functioning correctly. My JS code is asking the WebAIM API whether each colour combination passes or fails the accessibility test. The code is then checking the pass/fail result against the users yes/no guess, and either displaying a “Correct!” message or a “Wrong” message. In this test, the background and text colours are hard-coded into my JS file.
 
-![Web inspector screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/codenotworking.gif)
+![Web inspector screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/successfulAPI.gif)
 
 My next step was to compile multiple question variables - each with their own background and text colour properties - into an external JSON file. I loaded each question into a Handlebars template in my HTML file, and then used CSS code to remove and display each div one by one. However, I had a lot of difficulty in getting the JS checking code to work for multiple questions.
 
+![Web inspector screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/codenotworking.gif)
+
 I did a lot of console logs and the code seemed to display the correct message for questions 1 and 2, but question 3 only displayed the message from question 2. The code for question 3 definitely worked as the console log showed that it has executed, but the message was being overwritten by question 2. I needed to find a way to execute the code one step at a time only.
+
+
 
 
 
@@ -60,9 +68,11 @@ I also restructured my JSON file so that all of my questions were stored as mult
 
 ![JSON code screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/code2_.png)
 
-The biggest revelation I had was the discovery of the 'unbind' method. The reason why my most recent code kept getting overwritten by previous functions was because I was attaching all my click events to the same two buttons. I had to unbind the click event from the Agree and Disagree button IDs after each loadQuestion function had run, in order to start afresh each time.
+The biggest revelation I had was the discovery of the 'unbind' method. The reason why my most recent code kept getting overwritten by previous functions was because I was attaching all my click events to the same two buttons. I had to unbind the click event from the Agree and Disagree button IDs after each loadQuestion() function had run, in order to start afresh each time.
 
 ![JS code screenshot](https://github.com/madspesh/WebAdvanced_Spring2019_gillr456/blob/master/Finals/style/img/code3_.png)
+
+
 
 
 
@@ -94,11 +104,36 @@ Finally, I added a customised sentiment message at the end of the quiz depending
 
 
 
+## Future Iterations
+
+My next steps are to sort out a bug I'm having with the 'replay' button at the end of the quiz, and to add in the Twitter 'retweet' functionality in order to spread awareness of the game.
+
+I would also like to integrate some more animation and perhaps illustrations into the game, in order to make the experience more fun and enjoyable. I think the customised message at the end could perhaps include some sort of fireworks animation if the user scores 10 out of 10.
 
 
 
 
 
+## Built With
+
+* [jQuery](https://jquery.com/) - JavaScript library
+* [WebAIM Color Contrast Checker](https://webaim.org/resources/contrastchecker/) - API
+
+
+
+
+
+## Author
+
+* **Rebecca Gill Clarke** - find me on [GitHub](https://github.com/madspesh) and at [madspesh.me](http://madspesh.me)
+
+
+
+
+
+## Acknowledgments
+
+* Thank you to [Kayla Polo-Garcia](https://github.com/KayPolo) for her code and tutelage.
 
 
 
